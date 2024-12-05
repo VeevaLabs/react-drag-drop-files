@@ -34,7 +34,7 @@ export default function useDragging({
     draggingCount++;
     if (
       (ev.dataTransfer.items && ev.dataTransfer.items.length !== 0) ||
-      ev.dataTransfer.types.indexOf('Files') >= 0
+      ev.dataTransfer.types?.indexOf('Files') >= 0
     ) {
       setDragging(true);
     }
